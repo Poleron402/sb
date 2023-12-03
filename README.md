@@ -16,10 +16,11 @@ Initial app flow
 * Checking out the item, which will remove it from the cart and add it to the order history
 * View order history
 * Get a random drink
+<br>
 Rough diagram
 <br>
 <img width="400" alt="Screenshot 2023-12-03 at 10 26 26 AM" src="https://github.com/Poleron402/sb/assets/89750832/3d5d32e7-5103-4c9a-94bd-9c08ac32c97a">
 <br>
 
 ## Implementation
-IDE Android Studio using Java
+IDE Android Studio using Java, RoomDB, SQLite
