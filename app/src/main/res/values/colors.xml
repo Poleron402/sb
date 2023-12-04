@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="coffee">#6A2319</color>
+    <color name="darkRoast">#4F2019</color>
+    <color name="latte">#A1847F</color>
+    <color name="lucky">#41631A</color>
+    <color name="purple">#7A27A8</color>
+</resources>
