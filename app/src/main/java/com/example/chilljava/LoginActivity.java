@@ -3,7 +3,9 @@ package com.example.chilljava;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,7 +24,8 @@ public class LoginActivity extends AppCompatActivity {
     private ChillJavaDAO mChillJavaDAO;
     private String un;
     private String pw;
-
+    private static final String PREFENCES_KEY = "com.example.chilljava.PREFENCES_KEY";
+    private static final String USER_ID_KEY = "com.example.chilljava.userIdKey";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +49,10 @@ public class LoginActivity extends AppCompatActivity {
                 if(un.equals("") || pw.equals("") || myUser == null || !myUser.getPassword().equals(pw)){
                     Toast.makeText(LoginActivity.this, "One or two required fields missing!", Toast.LENGTH_SHORT).show();
                 }else {
+                    SharedPreferences preferences = getSharedPreferences(PREFENCES_KEY, MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
+                    editor.putInt(USER_ID_KEY, myUser.getUserId());
+                    editor.apply();
                     Toast.makeText(LoginActivity.this, "Welcome!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     intent.putExtra("user_id", myUser.getUserId());
