@@ -1,0 +1,122 @@
+[
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_baseline_menu_24.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/baseline_menu_24.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/layout_activity_main.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_cf.jpeg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/cf.jpeg"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_baseline_home_24.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/baseline_home_24.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_baseline_emoji_food_beverage_24.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/baseline_emoji_food_beverage_24.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_coffee_si.jpeg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/coffee_si.jpeg"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/layout_activity_signin.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/layout/activity_signin.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/xml_backup_rules.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_baseline_star_24.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/baseline_star_24.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_cfwelcome.jpeg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/cfwelcome.jpeg"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_baseline_shopping_cart_checkout_24.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/baseline_shopping_cart_checkout_24.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_cf2.jpeg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/cf2.jpeg"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/layout_activity_login.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_baseline_coffee_24.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/baseline_coffee_24.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/layout_activity_menu.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/layout/activity_menu.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-hdpi/ic_launcher.webp"
+    }
+]
