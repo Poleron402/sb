@@ -14,12 +14,16 @@ drawable baseline_home_24
 drawable baseline_menu_24
 drawable baseline_shopping_cart_checkout_24
 drawable baseline_star_24
+drawable cappuccino
 drawable cf
 drawable cf2
 drawable cfwelcome
 drawable coffee_si
+drawable dark_roast
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable latte
+drawable medium_roast
 id adminButton
 id cartbutton
 id hello
@@ -30,6 +34,7 @@ id logintransfer
 id logoutButton
 id luckyButton
 id menuButton
+id myLayoutOuter
 id nameDisplay
 id password
 id passwordsi

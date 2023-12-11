@@ -6,6 +6,7 @@ INJECTED from /Users/polinaperon/Desktop/ChillJava/app/src/main/AndroidManifest.
 INJECTED from /Users/polinaperon/Desktop/ChillJava/app/src/main/AndroidManifest.xml:2:1-35:12
 MERGED from [androidx.room:room-runtime:2.6.1] /Users/polinaperon/.gradle/caches/transforms-3/2d30e4b024a806c62afe575d493daf36/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
 MERGED from [com.google.android.material:material:1.10.0] /Users/polinaperon/.gradle/caches/transforms-3/4235b5f7ad3a9d9aaebdd45726f0b6f1/transformed/material-1.10.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/polinaperon/.gradle/caches/transforms-3/a0cc8308645a62458ebb2ac671209909/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/polinaperon/.gradle/caches/transforms-3/2c7208e2f8591e2a6dcd58964bf23e15/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/polinaperon/.gradle/caches/transforms-3/a21dfa2b1a3ed48c6197085937073677/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/polinaperon/.gradle/caches/transforms-3/f614d275517b9859c8f4b1c333e1f52a/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
@@ -39,7 +40,6 @@ MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/polinaperon/.gradle/c
 MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/polinaperon/.gradle/caches/transforms-3/5eae8688d0d411ebb58817d1c012b5e9/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/polinaperon/.gradle/caches/transforms-3/2ebe45e1d22ece0c6c31af2890b2de05/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/polinaperon/.gradle/caches/transforms-3/c4f2c5b283ee90db7c47dbb4dbfcff52/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/polinaperon/.gradle/caches/transforms-3/a0cc8308645a62458ebb2ac671209909/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/polinaperon/.gradle/caches/transforms-3/ec61e73737855ba6ebc2f5ad3dc03ff8/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/polinaperon/.gradle/caches/transforms-3/208c3caf3e92a1e14cd01aebf9661dbd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/polinaperon/.gradle/caches/transforms-3/f204461ac2a07378d5b102fe31ff0c80/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
@@ -143,6 +143,8 @@ MERGED from [androidx.room:room-runtime:2.6.1] /Users/polinaperon/.gradle/caches
 MERGED from [androidx.room:room-runtime:2.6.1] /Users/polinaperon/.gradle/caches/transforms-3/2d30e4b024a806c62afe575d493daf36/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
 MERGED from [com.google.android.material:material:1.10.0] /Users/polinaperon/.gradle/caches/transforms-3/4235b5f7ad3a9d9aaebdd45726f0b6f1/transformed/material-1.10.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.10.0] /Users/polinaperon/.gradle/caches/transforms-3/4235b5f7ad3a9d9aaebdd45726f0b6f1/transformed/material-1.10.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/polinaperon/.gradle/caches/transforms-3/a0cc8308645a62458ebb2ac671209909/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/polinaperon/.gradle/caches/transforms-3/a0cc8308645a62458ebb2ac671209909/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/polinaperon/.gradle/caches/transforms-3/2c7208e2f8591e2a6dcd58964bf23e15/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/polinaperon/.gradle/caches/transforms-3/2c7208e2f8591e2a6dcd58964bf23e15/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/polinaperon/.gradle/caches/transforms-3/a21dfa2b1a3ed48c6197085937073677/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
@@ -209,8 +211,6 @@ MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/polinaperon/.gradle/caches/tra
 MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/polinaperon/.gradle/caches/transforms-3/2ebe45e1d22ece0c6c31af2890b2de05/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/polinaperon/.gradle/caches/transforms-3/c4f2c5b283ee90db7c47dbb4dbfcff52/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/polinaperon/.gradle/caches/transforms-3/c4f2c5b283ee90db7c47dbb4dbfcff52/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/polinaperon/.gradle/caches/transforms-3/a0cc8308645a62458ebb2ac671209909/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/polinaperon/.gradle/caches/transforms-3/a0cc8308645a62458ebb2ac671209909/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/polinaperon/.gradle/caches/transforms-3/ec61e73737855ba6ebc2f5ad3dc03ff8/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/polinaperon/.gradle/caches/transforms-3/ec61e73737855ba6ebc2f5ad3dc03ff8/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/polinaperon/.gradle/caches/transforms-3/208c3caf3e92a1e14cd01aebf9661dbd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
