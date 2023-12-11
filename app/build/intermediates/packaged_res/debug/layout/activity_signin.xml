@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/coffee_si">
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="Sign up for Chill Java"
+        android:textColor="@color/milk"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/usernamesi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/username"
+        android:padding="20dp"
+        android:textColorHint="@color/milk" />
+
+    <EditText
+        android:id="@+id/passwordsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernamesi"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/password"
+        android:padding="20dp"
+        android:textColorHint="@color/milk" />
+    <EditText
+        android:id="@+id/repeatpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordsi"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/password"
+        android:padding="20dp"
+        android:textColorHint="@color/milk" />
+    <Button
+        android:id="@+id/signinbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repeatpassword"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="19dp"
+        android:text="Sign Up"
+        />
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signinbtn"
+        android:layout_marginTop="30dp"
+        android:text="Have an account?"
+        android:textColor="@color/milk"
+        android:gravity="center"
+        />
+        <Button
+        android:id="@+id/logintransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="19dp"
+        android:text="Log in"
+            android:backgroundTint="@color/coffee"
+        />
+</RelativeLayout>
