@@ -34,6 +34,19 @@ public interface ChillJavaDAO {
     List<Menu> getAllItems();
     @Query("select * from "+ChillJavaDB.MENU_TABLE+" where itemName like :itemName")
     List <Menu> getItemByName(String itemName);
-//    @Query("select * from "+ChillJavaDB.USER_TABLE+" where mUserId = :userId")
-//    Menu getUserById(int userId);
+    @Query("select * from "+ChillJavaDB.MENU_TABLE+" where itemId = :itemId")
+    Menu getItemById(int itemId);
+
+    @Insert
+    void insert(Orders... orders);
+    @Update
+    void update(Orders... orders);
+    @Delete
+    void delete(Orders order);
+    @Query("select * from "+ChillJavaDB.ORDERS_TABLE)
+    List<Orders> getAllOrders();
+    @Query("select * from "+ChillJavaDB.ORDERS_TABLE+" where orderId like = :orderId")
+    Orders getOrderById(int orderId);
+    @Query("select * from "+ChillJavaDB.ORDERS_TABLE+" where customerId = :custId")
+    List <Orders> getOrderByCustId(int custId);
 }

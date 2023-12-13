@@ -475,6 +475,50 @@ public final class ChillJavaDAO_Impl implements ChillJavaDAO {
     }
   }
 
+  @Override
+  public Menu getItemById(final int itemId) {
+    final String _sql = "select * from MenuTable where itemId = ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, itemId);
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+    try {
+      final int _cursorIndexOfItemId = CursorUtil.getColumnIndexOrThrow(_cursor, "itemId");
+      final int _cursorIndexOfItemName = CursorUtil.getColumnIndexOrThrow(_cursor, "itemName");
+      final int _cursorIndexOfNumShots = CursorUtil.getColumnIndexOrThrow(_cursor, "numShots");
+      final int _cursorIndexOfCanBeIced = CursorUtil.getColumnIndexOrThrow(_cursor, "canBeIced");
+      final int _cursorIndexOfPrice = CursorUtil.getColumnIndexOrThrow(_cursor, "price");
+      final Menu _result;
+      if (_cursor.moveToFirst()) {
+        final String _tmpItemName;
+        if (_cursor.isNull(_cursorIndexOfItemName)) {
+          _tmpItemName = null;
+        } else {
+          _tmpItemName = _cursor.getString(_cursorIndexOfItemName);
+        }
+        final int _tmpNumShots;
+        _tmpNumShots = _cursor.getInt(_cursorIndexOfNumShots);
+        final boolean _tmpCanBeIced;
+        final int _tmp;
+        _tmp = _cursor.getInt(_cursorIndexOfCanBeIced);
+        _tmpCanBeIced = _tmp != 0;
+        final double _tmpPrice;
+        _tmpPrice = _cursor.getDouble(_cursorIndexOfPrice);
+        _result = new Menu(_tmpItemName,_tmpNumShots,_tmpCanBeIced,_tmpPrice);
+        final int _tmpItemId;
+        _tmpItemId = _cursor.getInt(_cursorIndexOfItemId);
+        _result.setItemId(_tmpItemId);
+      } else {
+        _result = null;
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
   @NonNull
   public static List<Class<?>> getRequiredConverters() {
     return Collections.emptyList();

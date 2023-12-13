@@ -12,28 +12,40 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.chilljava.db.ChillJavaDAO;
 import com.example.chilljava.db.ChillJavaDB;
 import com.example.chilljava.db.Menu;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MenuActivity extends AppCompatActivity {
+public class MenuActivity extends AppCompatActivity  {
     private Button homeButton;
+    private Button cartButton;
     List<Menu> allItems = new ArrayList<>();
+    List<Menu> selectedItems = new ArrayList<>();
     private ChillJavaDAO mChillJavaDAO;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         homeButton = findViewById(R.id.homebutton);
-
+        cartButton = findViewById(R.id.cartbutton);
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                intentFactory();
+                intentFactory(MainActivity.class);
+            }
+        });
+        cartButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuActivity.this, CartActivity.class);
+                intent.putExtra("SelectedItems", (Serializable) selectedItems);
+                startActivity(intent);
             }
         });
         baseItems();
@@ -60,6 +72,7 @@ public class MenuActivity extends AppCompatActivity {
 
         for (int i = 0; i < allItems.size(); i++) {
             String imageRsc = allItems.get(i).getItemName().replace(" ", "_").toLowerCase();
+            Menu anItem = allItems.get(i);
             int resourceId = getResources().getIdentifier(imageRsc, "drawable", getPackageName());
             ImageView coffeeImage = new ImageView(this);
             coffeeImage.setImageResource(resourceId);
@@ -90,7 +103,13 @@ public class MenuActivity extends AppCompatActivity {
 
             Button button = new Button(this);
             button.setText("Add to cart");
-
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    selectedItems.add(anItem);
+                    Toast.makeText(MenuActivity.this, "Item added to cart", Toast.LENGTH_SHORT).show();
+                }
+            });
             if(allItems.get(i).isCanBeIced() == true){
                 textView2.setText("This drink can be crafted iced");
             }else{
@@ -116,8 +135,8 @@ public class MenuActivity extends AppCompatActivity {
 //
 //    }
 
-    private void intentFactory(){
-        Intent intent = new Intent(MenuActivity.this, MainActivity.class);
+    private void intentFactory(Class destination){
+        Intent intent = new Intent(MenuActivity.this, destination);
         startActivity(intent);
         finish();
     }

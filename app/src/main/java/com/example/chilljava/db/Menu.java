@@ -3,8 +3,10 @@ package com.example.chilljava.db;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import java.io.Serializable;
+
 @Entity(tableName = ChillJavaDB.MENU_TABLE)
-public class Menu {
+public class Menu implements Serializable {
     @PrimaryKey(autoGenerate = true)
     private int itemId;
     private String itemName;

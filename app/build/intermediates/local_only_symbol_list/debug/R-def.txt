@@ -36,6 +36,7 @@ id logintransfer
 id logoutButton
 id luckyButton
 id menuButton
+id menubutton
 id myLayoutOuter
 id nameDisplay
 id password
