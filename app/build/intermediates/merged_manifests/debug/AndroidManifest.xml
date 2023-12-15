@@ -28,6 +28,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.ChillJava" >
         <activity
+            android:name="com.example.chilljava.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.chilljava.HistoryActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.chilljava.CartActivity"
             android:exported="false" />
         <activity

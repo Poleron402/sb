@@ -8,21 +8,17 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = ChillJavaDB.ORDERS_TABLE,
         foreignKeys = {@ForeignKey(entity = User.class,
                 parentColumns = "mUserId",
-                childColumns = "customerId"),
-                @ForeignKey(entity=Menu.class,
-                parentColumns = "itemId",
-                childColumns = "itemId")})
+                childColumns = "customerId")})
 public class Orders {
     @PrimaryKey(autoGenerate = true)
     private int orderId;
     @ColumnInfo(index = true)
     private int customerId;
-    @ColumnInfo(index = true)
-    private int itemId;
+    private String itemIds;
 
-    public Orders(int customerId, int itemId) {
+    public Orders(int customerId, String itemIds) {
         this.customerId = customerId;
-        this.itemId = itemId;
+        this.itemIds = itemIds;
     }
 
     public int getOrderId() {
@@ -41,11 +37,11 @@ public class Orders {
         this.customerId = customerId;
     }
 
-    public int getItemId() {
-        return itemId;
+    public String getItemIds() {
+        return itemIds;
     }
 
-    public void setItemId(int itemId) {
-        this.itemId = itemId;
+    public void setItemIds(String itemId) {
+        this.itemIds = itemId;
     }
 }

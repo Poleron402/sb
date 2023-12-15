@@ -25,13 +25,19 @@ public final class ChillJavaDAO_Impl implements ChillJavaDAO {
 
   private final EntityInsertionAdapter<Menu> __insertionAdapterOfMenu;
 
+  private final EntityInsertionAdapter<Orders> __insertionAdapterOfOrders;
+
   private final EntityDeletionOrUpdateAdapter<User> __deletionAdapterOfUser;
 
   private final EntityDeletionOrUpdateAdapter<Menu> __deletionAdapterOfMenu;
 
+  private final EntityDeletionOrUpdateAdapter<Orders> __deletionAdapterOfOrders;
+
   private final EntityDeletionOrUpdateAdapter<User> __updateAdapterOfUser;
 
   private final EntityDeletionOrUpdateAdapter<Menu> __updateAdapterOfMenu;
+
+  private final EntityDeletionOrUpdateAdapter<Orders> __updateAdapterOfOrders;
 
   public ChillJavaDAO_Impl(@NonNull final RoomDatabase __db) {
     this.__db = __db;
@@ -84,6 +90,24 @@ public final class ChillJavaDAO_Impl implements ChillJavaDAO {
         statement.bindDouble(5, entity.getPrice());
       }
     };
+    this.__insertionAdapterOfOrders = new EntityInsertionAdapter<Orders>(__db) {
+      @Override
+      @NonNull
+      protected String createQuery() {
+        return "INSERT OR ABORT INTO `OrdersTable` (`orderId`,`customerId`,`itemIds`) VALUES (nullif(?, 0),?,?)";
+      }
+
+      @Override
+      protected void bind(@NonNull final SupportSQLiteStatement statement, final Orders entity) {
+        statement.bindLong(1, entity.getOrderId());
+        statement.bindLong(2, entity.getCustomerId());
+        if (entity.getItemIds() == null) {
+          statement.bindNull(3);
+        } else {
+          statement.bindString(3, entity.getItemIds());
+        }
+      }
+    };
     this.__deletionAdapterOfUser = new EntityDeletionOrUpdateAdapter<User>(__db) {
       @Override
       @NonNull
@@ -106,6 +130,18 @@ public final class ChillJavaDAO_Impl implements ChillJavaDAO {
       @Override
       protected void bind(@NonNull final SupportSQLiteStatement statement, final Menu entity) {
         statement.bindLong(1, entity.getItemId());
+      }
+    };
+    this.__deletionAdapterOfOrders = new EntityDeletionOrUpdateAdapter<Orders>(__db) {
+      @Override
+      @NonNull
+      protected String createQuery() {
+        return "DELETE FROM `OrdersTable` WHERE `orderId` = ?";
+      }
+
+      @Override
+      protected void bind(@NonNull final SupportSQLiteStatement statement, final Orders entity) {
+        statement.bindLong(1, entity.getOrderId());
       }
     };
     this.__updateAdapterOfUser = new EntityDeletionOrUpdateAdapter<User>(__db) {
@@ -159,6 +195,25 @@ public final class ChillJavaDAO_Impl implements ChillJavaDAO {
         statement.bindLong(6, entity.getItemId());
       }
     };
+    this.__updateAdapterOfOrders = new EntityDeletionOrUpdateAdapter<Orders>(__db) {
+      @Override
+      @NonNull
+      protected String createQuery() {
+        return "UPDATE OR ABORT `OrdersTable` SET `orderId` = ?,`customerId` = ?,`itemIds` = ? WHERE `orderId` = ?";
+      }
+
+      @Override
+      protected void bind(@NonNull final SupportSQLiteStatement statement, final Orders entity) {
+        statement.bindLong(1, entity.getOrderId());
+        statement.bindLong(2, entity.getCustomerId());
+        if (entity.getItemIds() == null) {
+          statement.bindNull(3);
+        } else {
+          statement.bindString(3, entity.getItemIds());
+        }
+        statement.bindLong(4, entity.getOrderId());
+      }
+    };
   }
 
   @Override
@@ -179,6 +234,18 @@ public final class ChillJavaDAO_Impl implements ChillJavaDAO {
     __db.beginTransaction();
     try {
       __insertionAdapterOfMenu.insert(items);
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+    }
+  }
+
+  @Override
+  public void insert(final Orders... orders) {
+    __db.assertNotSuspendingTransaction();
+    __db.beginTransaction();
+    try {
+      __insertionAdapterOfOrders.insert(orders);
       __db.setTransactionSuccessful();
     } finally {
       __db.endTransaction();
@@ -210,6 +277,18 @@ public final class ChillJavaDAO_Impl implements ChillJavaDAO {
   }
 
   @Override
+  public void delete(final Orders order) {
+    __db.assertNotSuspendingTransaction();
+    __db.beginTransaction();
+    try {
+      __deletionAdapterOfOrders.handle(order);
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+    }
+  }
+
+  @Override
   public void update(final User... users) {
     __db.assertNotSuspendingTransaction();
     __db.beginTransaction();
@@ -227,6 +306,18 @@ public final class ChillJavaDAO_Impl implements ChillJavaDAO {
     __db.beginTransaction();
     try {
       __updateAdapterOfMenu.handleMultiple(items);
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+    }
+  }
+
+  @Override
+  public void update(final Orders... orders) {
+    __db.assertNotSuspendingTransaction();
+    __db.beginTransaction();
+    try {
+      __updateAdapterOfOrders.handleMultiple(orders);
       __db.setTransactionSuccessful();
     } finally {
       __db.endTransaction();
@@ -511,6 +602,112 @@ public final class ChillJavaDAO_Impl implements ChillJavaDAO {
         _result.setItemId(_tmpItemId);
       } else {
         _result = null;
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
+  @Override
+  public List<Orders> getAllOrders() {
+    final String _sql = "select * from OrdersTable";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+    try {
+      final int _cursorIndexOfOrderId = CursorUtil.getColumnIndexOrThrow(_cursor, "orderId");
+      final int _cursorIndexOfCustomerId = CursorUtil.getColumnIndexOrThrow(_cursor, "customerId");
+      final int _cursorIndexOfItemIds = CursorUtil.getColumnIndexOrThrow(_cursor, "itemIds");
+      final List<Orders> _result = new ArrayList<Orders>(_cursor.getCount());
+      while (_cursor.moveToNext()) {
+        final Orders _item;
+        final int _tmpCustomerId;
+        _tmpCustomerId = _cursor.getInt(_cursorIndexOfCustomerId);
+        final String _tmpItemIds;
+        if (_cursor.isNull(_cursorIndexOfItemIds)) {
+          _tmpItemIds = null;
+        } else {
+          _tmpItemIds = _cursor.getString(_cursorIndexOfItemIds);
+        }
+        _item = new Orders(_tmpCustomerId,_tmpItemIds);
+        final int _tmpOrderId;
+        _tmpOrderId = _cursor.getInt(_cursorIndexOfOrderId);
+        _item.setOrderId(_tmpOrderId);
+        _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
+  @Override
+  public Orders getOrderById(final int orderId) {
+    final String _sql = "select * from OrdersTable where orderId = ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, orderId);
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+    try {
+      final int _cursorIndexOfOrderId = CursorUtil.getColumnIndexOrThrow(_cursor, "orderId");
+      final int _cursorIndexOfCustomerId = CursorUtil.getColumnIndexOrThrow(_cursor, "customerId");
+      final int _cursorIndexOfItemIds = CursorUtil.getColumnIndexOrThrow(_cursor, "itemIds");
+      final Orders _result;
+      if (_cursor.moveToFirst()) {
+        final int _tmpCustomerId;
+        _tmpCustomerId = _cursor.getInt(_cursorIndexOfCustomerId);
+        final String _tmpItemIds;
+        if (_cursor.isNull(_cursorIndexOfItemIds)) {
+          _tmpItemIds = null;
+        } else {
+          _tmpItemIds = _cursor.getString(_cursorIndexOfItemIds);
+        }
+        _result = new Orders(_tmpCustomerId,_tmpItemIds);
+        final int _tmpOrderId;
+        _tmpOrderId = _cursor.getInt(_cursorIndexOfOrderId);
+        _result.setOrderId(_tmpOrderId);
+      } else {
+        _result = null;
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
+  @Override
+  public List<Orders> getOrderByCustId(final int custId) {
+    final String _sql = "select * from OrdersTable where customerId = ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, custId);
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+    try {
+      final int _cursorIndexOfOrderId = CursorUtil.getColumnIndexOrThrow(_cursor, "orderId");
+      final int _cursorIndexOfCustomerId = CursorUtil.getColumnIndexOrThrow(_cursor, "customerId");
+      final int _cursorIndexOfItemIds = CursorUtil.getColumnIndexOrThrow(_cursor, "itemIds");
+      final List<Orders> _result = new ArrayList<Orders>(_cursor.getCount());
+      while (_cursor.moveToNext()) {
+        final Orders _item;
+        final int _tmpCustomerId;
+        _tmpCustomerId = _cursor.getInt(_cursorIndexOfCustomerId);
+        final String _tmpItemIds;
+        if (_cursor.isNull(_cursorIndexOfItemIds)) {
+          _tmpItemIds = null;
+        } else {
+          _tmpItemIds = _cursor.getString(_cursorIndexOfItemIds);
+        }
+        _item = new Orders(_tmpCustomerId,_tmpItemIds);
+        final int _tmpOrderId;
+        _tmpOrderId = _cursor.getInt(_cursorIndexOfOrderId);
+        _item.setOrderId(_tmpOrderId);
+        _result.add(_item);
       }
       return _result;
     } finally {

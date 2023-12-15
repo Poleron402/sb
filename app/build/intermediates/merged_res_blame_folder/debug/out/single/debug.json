@@ -1,11 +1,15 @@
 [
     {
+        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/layout_activity_history.xml.flat",
+        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/layout/activity_history.xml"
+    },
+    {
         "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_cappuccino.jpeg.flat",
         "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/cappuccino.jpeg"
     },
     {
-        "merged": "com.example.chilljava.app-merged_res-34:/drawable_baseline_menu_24.xml.flat",
-        "source": "com.example.chilljava.app-main-36:/drawable/baseline_menu_24.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_admin.jpeg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/admin.jpeg"
     },
     {
         "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/mipmap-hdpi_ic_launcher.webp.flat",
@@ -22,6 +26,10 @@
     {
         "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/mipmap-anydpi_ic_launcher.xml.flat",
         "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_baseline_menu_24_2.xml.flat",
+        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/baseline_menu_24_2.xml"
     },
     {
         "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/layout_activity_cart.xml.flat",
@@ -92,12 +100,12 @@
         "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/layout/activity_signin.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/ic_launcher_foreground.xml"
-    },
-    {
         "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_beans.jpg.flat",
         "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/beans.jpg"
+    },
+    {
+        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/ic_launcher_foreground.xml"
     },
     {
         "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/xml_backup_rules.xml.flat",
@@ -124,12 +132,16 @@
         "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/baseline_coffee_24.xml"
     },
     {
-        "merged": "com.example.chilljava.app-merged_res-34:/layout_activity_cart.xml.flat",
-        "source": "com.example.chilljava.app-main-36:/layout/activity_cart.xml"
+        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_baseline_home_24_2.xml.flat",
+        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/baseline_home_24_2.xml"
     },
     {
         "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/layout_activity_login.xml.flat",
         "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/layout_activity_admin.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/layout/activity_admin.xml"
     },
     {
         "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/mipmap-mdpi_ic_launcher_round.webp.flat",

@@ -63,11 +63,7 @@ public class Menu implements Serializable {
 
     @Override
     public String toString() {
-        return "Menu{" +
-                "itemName='" + itemName + '\'' +
-                ", numShots=" + numShots +
-                ", canBeIced=" + canBeIced +
-                ", price=" + price +
-                '}';
+        return "ItemName='" + itemName + '\'' +
+                ", price=" + price;
     }
 }

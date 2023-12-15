@@ -9,7 +9,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mUserDisplay;
     private Button madminButton;
     private Button mLogoutButton;
+    private Button mHistoryButton;
     private Button menuButton;
     private static final String USER_ID_KEY = "com.example.chilljava.userIdKey";
     private static final String PREFENCES_KEY = "com.example.chilljava.PREFENCES_KEY";
@@ -37,10 +37,11 @@ public class MainActivity extends AppCompatActivity {
         mUserDisplay = findViewById(R.id.nameDisplay);
         mLogoutButton = findViewById(R.id.logoutButton);
         menuButton = findViewById(R.id.menuButton);
+        mHistoryButton = findViewById(R.id.historyButton);
+
         wireUpDB();
         SharedPreferences preferences = getSharedPreferences(PREFENCES_KEY, MODE_PRIVATE);
         userId = preferences.getInt(USER_ID_KEY, -1);
-
 
         if (userId != -1){
             user = mChillJavaDAO.getUserById(userId);
@@ -64,25 +65,36 @@ public class MainActivity extends AppCompatActivity {
             User admin = new User("admin2", "admin2", 10, "true");
             mChillJavaDAO.insert(admin);
         }
-        mLogoutButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                SharedPreferences preferences =getSharedPreferences(PREFENCES_KEY,Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.clear();
-                editor.apply();
-                finish();
-                userId = -1;
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent);
+        mLogoutButton.setOnClickListener(view -> {
+            SharedPreferences preferences1 =getSharedPreferences(PREFENCES_KEY,Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = preferences1.edit();
+            editor.clear();
+            editor.apply();
+            finish();
+            userId = -1;
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
 
-            }
         });
 
         menuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                intent.putExtra("userId", userId);
+                startActivity(intent);
+            }
+        });
+        madminButton.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, AdminActivity.class);
+            intent.putExtra("userId", userId);
+            startActivity(intent);
+        });
+        mHistoryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
+                intent.putExtra("userId", userId);
                 startActivity(intent);
             }
         });
@@ -91,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
     private void wireUpDB(){
         mChillJavaDAO = Room.databaseBuilder(this, ChillJavaDB.class, ChillJavaDB.DB_NAME)
                 .allowMainThreadQueries().build().getChillJavaDAO();
-
-
     }
+
+
 }

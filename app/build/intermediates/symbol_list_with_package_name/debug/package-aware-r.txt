@@ -2943,12 +2943,15 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable admin
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_coffee_24
 drawable baseline_emoji_food_beverage_24
 drawable baseline_home_24
+drawable baseline_home_24_2
 drawable baseline_menu_24
+drawable baseline_menu_24_2
 drawable baseline_shopping_cart_checkout_24
 drawable baseline_star_24
 drawable beans
@@ -3134,6 +3137,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addbutton
 id adminButton
 id alertTitle
 id aligned
@@ -3207,6 +3211,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id deletebutton
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3237,6 +3242,7 @@ id easeOut
 id east
 id edge
 id edit_query
+id editbutton
 id elastic
 id embed
 id end
@@ -3693,7 +3699,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_admin
 layout activity_cart
+layout activity_history
 layout activity_login
 layout activity_main
 layout activity_menu

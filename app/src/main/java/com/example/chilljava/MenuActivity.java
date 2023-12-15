@@ -5,6 +5,7 @@ import androidx.cardview.widget.CardView;
 import androidx.room.Room;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 import com.example.chilljava.db.ChillJavaDAO;
 import com.example.chilljava.db.ChillJavaDB;
 import com.example.chilljava.db.Menu;
+import com.example.chilljava.db.Orders;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -25,6 +27,8 @@ import java.util.List;
 public class MenuActivity extends AppCompatActivity  {
     private Button homeButton;
     private Button cartButton;
+
+    private int muserId;
     List<Menu> allItems = new ArrayList<>();
     List<Menu> selectedItems = new ArrayList<>();
     private ChillJavaDAO mChillJavaDAO;
@@ -34,6 +38,8 @@ public class MenuActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_menu);
         homeButton = findViewById(R.id.homebutton);
         cartButton = findViewById(R.id.cartbutton);
+        Intent intent = getIntent();
+        muserId = intent.getIntExtra("userId", -1);
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,14 +49,16 @@ public class MenuActivity extends AppCompatActivity  {
         cartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(MenuActivity.this, CartActivity.class);
                 intent.putExtra("SelectedItems", (Serializable) selectedItems);
+                intent.putExtra("userId", muserId);
                 startActivity(intent);
             }
         });
         baseItems();
         showItems();
-
+        Toast.makeText(this, String.valueOf(muserId), Toast.LENGTH_SHORT).show();
     }
     private void baseItems(){
         wireUpDB();
@@ -130,10 +138,7 @@ public class MenuActivity extends AppCompatActivity  {
         }
     }
 
-    //TODO:
-//    private void addToCart(Menu item){
-//
-//    }
+
 
     private void intentFactory(Class destination){
         Intent intent = new Intent(MenuActivity.this, destination);

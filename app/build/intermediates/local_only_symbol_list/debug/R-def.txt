@@ -8,10 +8,13 @@ color lucky
 color milk
 color purple
 color white
+drawable admin
 drawable baseline_coffee_24
 drawable baseline_emoji_food_beverage_24
 drawable baseline_home_24
+drawable baseline_home_24_2
 drawable baseline_menu_24
+drawable baseline_menu_24_2
 drawable baseline_shopping_cart_checkout_24
 drawable baseline_star_24
 drawable beans
@@ -26,8 +29,11 @@ drawable ic_launcher_foreground
 drawable latte
 drawable lattewp
 drawable medium_roast
+id addbutton
 id adminButton
 id cartbutton
+id deletebutton
+id editbutton
 id hello
 id historyButton
 id homebutton
@@ -48,7 +54,9 @@ id signinbtn
 id textView
 id username
 id usernamesi
+layout activity_admin
 layout activity_cart
+layout activity_history
 layout activity_login
 layout activity_main
 layout activity_menu

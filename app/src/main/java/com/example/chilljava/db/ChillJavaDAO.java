@@ -45,7 +45,7 @@ public interface ChillJavaDAO {
     void delete(Orders order);
     @Query("select * from "+ChillJavaDB.ORDERS_TABLE)
     List<Orders> getAllOrders();
-    @Query("select * from "+ChillJavaDB.ORDERS_TABLE+" where orderId like = :orderId")
+    @Query("select * from "+ChillJavaDB.ORDERS_TABLE+" where orderId = :orderId")
     Orders getOrderById(int orderId);
     @Query("select * from "+ChillJavaDB.ORDERS_TABLE+" where customerId = :custId")
     List <Orders> getOrderByCustId(int custId);

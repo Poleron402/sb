@@ -35,11 +35,10 @@ public final class ChillJavaDB_Impl extends ChillJavaDB {
       public void createAllTables(@NonNull final SupportSQLiteDatabase db) {
         db.execSQL("CREATE TABLE IF NOT EXISTS `UserTable` (`mUserId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `mUsername` TEXT, `mPassword` TEXT, `stars` INTEGER NOT NULL, `isadmin` TEXT)");
         db.execSQL("CREATE TABLE IF NOT EXISTS `MenuTable` (`itemId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `itemName` TEXT, `numShots` INTEGER NOT NULL, `canBeIced` INTEGER NOT NULL, `price` REAL NOT NULL)");
-        db.execSQL("CREATE TABLE IF NOT EXISTS `OrdersTable` (`orderId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `customerId` INTEGER NOT NULL, `itemId` INTEGER NOT NULL, FOREIGN KEY(`customerId`) REFERENCES `UserTable`(`mUserId`) ON UPDATE NO ACTION ON DELETE NO ACTION , FOREIGN KEY(`itemId`) REFERENCES `MenuTable`(`itemId`) ON UPDATE NO ACTION ON DELETE NO ACTION )");
+        db.execSQL("CREATE TABLE IF NOT EXISTS `OrdersTable` (`orderId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `customerId` INTEGER NOT NULL, `itemIds` TEXT, FOREIGN KEY(`customerId`) REFERENCES `UserTable`(`mUserId`) ON UPDATE NO ACTION ON DELETE NO ACTION )");
         db.execSQL("CREATE INDEX IF NOT EXISTS `index_OrdersTable_customerId` ON `OrdersTable` (`customerId`)");
-        db.execSQL("CREATE INDEX IF NOT EXISTS `index_OrdersTable_itemId` ON `OrdersTable` (`itemId`)");
         db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'af1db97f7793486b8848e9890bc256d2')");
+        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '0b68c2485531702153cc4e862a7989eb')");
       }
 
       @Override
@@ -124,13 +123,11 @@ public final class ChillJavaDB_Impl extends ChillJavaDB {
         final HashMap<String, TableInfo.Column> _columnsOrdersTable = new HashMap<String, TableInfo.Column>(3);
         _columnsOrdersTable.put("orderId", new TableInfo.Column("orderId", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsOrdersTable.put("customerId", new TableInfo.Column("customerId", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsOrdersTable.put("itemId", new TableInfo.Column("itemId", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        final HashSet<TableInfo.ForeignKey> _foreignKeysOrdersTable = new HashSet<TableInfo.ForeignKey>(2);
+        _columnsOrdersTable.put("itemIds", new TableInfo.Column("itemIds", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysOrdersTable = new HashSet<TableInfo.ForeignKey>(1);
         _foreignKeysOrdersTable.add(new TableInfo.ForeignKey("UserTable", "NO ACTION", "NO ACTION", Arrays.asList("customerId"), Arrays.asList("mUserId")));
-        _foreignKeysOrdersTable.add(new TableInfo.ForeignKey("MenuTable", "NO ACTION", "NO ACTION", Arrays.asList("itemId"), Arrays.asList("itemId")));
-        final HashSet<TableInfo.Index> _indicesOrdersTable = new HashSet<TableInfo.Index>(2);
+        final HashSet<TableInfo.Index> _indicesOrdersTable = new HashSet<TableInfo.Index>(1);
         _indicesOrdersTable.add(new TableInfo.Index("index_OrdersTable_customerId", false, Arrays.asList("customerId"), Arrays.asList("ASC")));
-        _indicesOrdersTable.add(new TableInfo.Index("index_OrdersTable_itemId", false, Arrays.asList("itemId"), Arrays.asList("ASC")));
         final TableInfo _infoOrdersTable = new TableInfo("OrdersTable", _columnsOrdersTable, _foreignKeysOrdersTable, _indicesOrdersTable);
         final TableInfo _existingOrdersTable = TableInfo.read(db, "OrdersTable");
         if (!_infoOrdersTable.equals(_existingOrdersTable)) {
@@ -140,7 +137,7 @@ public final class ChillJavaDB_Impl extends ChillJavaDB {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "af1db97f7793486b8848e9890bc256d2", "96e642676cc34241c4ba0c5068338c78");
+    }, "0b68c2485531702153cc4e862a7989eb", "a84fbd74f9ea15f8577892e50a6aae06");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(config.context).name(config.name).callback(_openCallback).build();
     final SupportSQLiteOpenHelper _helper = config.sqliteOpenHelperFactory.create(_sqliteConfig);
     return _helper;
@@ -167,9 +164,9 @@ public final class ChillJavaDB_Impl extends ChillJavaDB {
       if (_supportsDeferForeignKeys) {
         _db.execSQL("PRAGMA defer_foreign_keys = TRUE");
       }
-      _db.execSQL("DELETE FROM `OrdersTable`");
       _db.execSQL("DELETE FROM `UserTable`");
       _db.execSQL("DELETE FROM `MenuTable`");
+      _db.execSQL("DELETE FROM `OrdersTable`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();
