@@ -50,14 +50,7 @@ public class DeleteDrinkActivity extends AppCompatActivity {
 
     }
 
-//    private boolean isId(String input){
-//        try{
-//            Integer.parseInt(input);
-//            return true;
-//        }catch(NumberFormatException err){
-//            return false;
-//        }
-//    }
+
 
     private void intentFactory(Class destination){
         Intent intent = new Intent(DeleteDrinkActivity.this, destination);
