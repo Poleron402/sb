@@ -1,4 +1,4 @@
-#Thu Dec 14 23:15:22 PST 2023
+#Fri Dec 15 22:22:07 PST 2023
 base.0=/Users/polinaperon/Desktop/ChillJava/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/polinaperon/Desktop/ChillJava/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.2=/Users/polinaperon/Desktop/ChillJava/app/build/intermediates/dex/debug/mergeProjectDexDebug/13/classes.dex

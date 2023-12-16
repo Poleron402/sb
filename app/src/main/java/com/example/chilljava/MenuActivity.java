@@ -80,8 +80,13 @@ public class MenuActivity extends AppCompatActivity  {
 
         for (int i = 0; i < allItems.size(); i++) {
             String imageRsc = allItems.get(i).getItemName().replace(" ", "_").toLowerCase();
+
             Menu anItem = allItems.get(i);
             int resourceId = getResources().getIdentifier(imageRsc, "drawable", getPackageName());
+            if(resourceId<=0){
+                imageRsc = "espresso";
+                resourceId = getResources().getIdentifier(imageRsc, "drawable", getPackageName());
+            }
             ImageView coffeeImage = new ImageView(this);
             coffeeImage.setImageResource(resourceId);
             coffeeImage.setLayoutParams(new LinearLayout.LayoutParams(480, 480));

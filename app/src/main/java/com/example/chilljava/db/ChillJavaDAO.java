@@ -34,6 +34,9 @@ public interface ChillJavaDAO {
     List<Menu> getAllItems();
     @Query("select * from "+ChillJavaDB.MENU_TABLE+" where itemName like :itemName")
     List <Menu> getItemByName(String itemName);
+
+    @Query("select * from "+ChillJavaDB.MENU_TABLE+" where itemName = :itemName")
+    Menu getAnItemByName(String itemName);
     @Query("select * from "+ChillJavaDB.MENU_TABLE+" where itemId = :itemId")
     Menu getItemById(int itemId);
 

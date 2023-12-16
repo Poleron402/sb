@@ -1,170 +1,182 @@
 [
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/layout_activity_history.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/layout/activity_history.xml"
-    },
-    {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_cappuccino.jpeg.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/cappuccino.jpeg"
-    },
-    {
         "merged": "com.example.chilljava.app-merged_res-34:/drawable_admin.jpeg.flat",
         "source": "com.example.chilljava.app-main-36:/drawable/admin.jpeg"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_baseline_menu_24.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/baseline_menu_24.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_latte.jpeg.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/latte.jpeg"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_coffee_si.jpeg.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/coffee_si.jpeg"
+        "merged": "com.example.chilljava.app-merged_res-34:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/mipmap-anydpi/ic_launcher.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/layout_activity_main.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_baseline_menu_24_2.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/baseline_menu_24_2.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_latte.jpeg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/latte.jpeg"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/layout_activity_cart.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/layout/activity_cart.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_baseline_emoji_food_beverage_24.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/baseline_emoji_food_beverage_24.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/layout_activity_history.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/layout/activity_history.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_cf.jpeg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/cf.jpeg"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/layout_activity_main.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/layout/activity_main.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_espresso.jpeg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/espresso.jpeg"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_baseline_home_24.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/baseline_home_24.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_cappuccino.jpeg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/cappuccino.jpeg"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_baseline_star_24.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/baseline_star_24.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_baseline_home_24.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/baseline_home_24.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_baseline_menu_24.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/baseline_menu_24.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-anydpi/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/xml/data_extraction_rules.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_baseline_emoji_food_beverage_24.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/baseline_emoji_food_beverage_24.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_coffee_si.jpeg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/coffee_si.jpeg"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_cfwelcome.jpeg.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/cfwelcome.jpeg"
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/layout_activity_menu.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/layout/activity_menu.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.example.chilljava.app-merged_res-34:/layout_activity_signin.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/layout/activity_signin.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/ic_launcher_background.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_medium_roast.jpeg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/medium_roast.jpeg"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_lattewp.jpeg.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/lattewp.jpeg"
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/layout_activity_signin.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/layout/activity_signin.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_dark_roast.jpeg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/dark_roast.jpeg"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_beans.jpg.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/beans.jpg"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_beans.jpg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/beans.jpg"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/ic_launcher_foreground.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/xml_backup_rules.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/xml/backup_rules.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/xml_backup_rules.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/xml/backup_rules.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_baseline_star_24.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/baseline_star_24.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_cfwelcome.jpeg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/cfwelcome.jpeg"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_cf2.jpeg.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/cf2.jpeg"
+        "merged": "com.example.chilljava.app-merged_res-34:/layout_activity_add_drink.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/layout/activity_add_drink.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_baseline_shopping_cart_checkout_24.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/baseline_shopping_cart_checkout_24.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_baseline_menu_24_2.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/baseline_menu_24_2.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.example.chilljava.app-merged_res-34:/layout_activity_delete_drink.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/layout/activity_delete_drink.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_baseline_coffee_24.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/baseline_coffee_24.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_baseline_shopping_cart_checkout_24.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/baseline_shopping_cart_checkout_24.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_baseline_home_24_2.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/baseline_home_24_2.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_lattewp.jpeg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/lattewp.jpeg"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/layout_activity_login.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/layout/activity_login.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/layout_activity_cart.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/layout/activity_cart.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_cf2.jpeg.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/cf2.jpeg"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
         "merged": "com.example.chilljava.app-merged_res-34:/layout_activity_admin.xml.flat",
         "source": "com.example.chilljava.app-main-36:/layout/activity_admin.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/mipmap-anydpi/ic_launcher_round.xml"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_baseline_home_24_2.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/baseline_home_24_2.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_cf.jpeg.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/cf.jpeg"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.example.chilljava.app-merged_res-34:/layout_activity_login.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_medium_roast.jpeg.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/medium_roast.jpeg"
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-anydpi/ic_launcher.xml"
     },
     {
-        "merged": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-merged_res-34:/drawable_dark_roast.jpeg.flat",
-        "source": "/Users/polinaperon/.gradle/daemon/8.0/com.example.chilljava.app-main-36:/drawable/dark_roast.jpeg"
+        "merged": "com.example.chilljava.app-merged_res-34:/drawable_baseline_coffee_24.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/drawable/baseline_coffee_24.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/layout_activity_menu.xml.flat",
+        "source": "com.example.chilljava.app-main-36:/layout/activity_menu.xml"
+    },
+    {
+        "merged": "com.example.chilljava.app-merged_res-34:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.chilljava.app-main-36:/mipmap-hdpi/ic_launcher.webp"
     }
 ]

@@ -28,6 +28,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.ChillJava" >
         <activity
+            android:name="com.example.chilljava.DeleteDrinkActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.chilljava.AddDrinkActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.chilljava.AdminActivity"
             android:exported="false" />
         <activity

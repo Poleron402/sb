@@ -2974,6 +2974,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable espresso
 drawable ic_arrow_back_black_24
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
@@ -3137,6 +3138,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addDrink
 id addbutton
 id adminButton
 id alertTitle
@@ -3155,6 +3157,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3211,6 +3214,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id deleteDrink
 id deletebutton
 id deltaRelative
 id dependency_ordering
@@ -3271,6 +3275,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id goHome
 id gone
 id graph
 id graph_wrap
@@ -3286,6 +3291,7 @@ id homeAsUp
 id homebutton
 id honorRequest
 id horizontal_only
+id ice
 id icon
 id icon_group
 id ifRoom
@@ -3379,6 +3385,7 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id myLayoutOuter
+id name
 id nameDisplay
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -3435,6 +3442,7 @@ id pin
 id position
 id postLayout
 id pressed
+id price
 id progress_circular
 id progress_horizontal
 id question
@@ -3476,6 +3484,7 @@ id selection_type
 id sharedValueSet
 id sharedValueUnset
 id shortcut
+id shots
 id showCustom
 id showHome
 id showTitle
@@ -3699,8 +3708,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_drink
 layout activity_admin
 layout activity_cart
+layout activity_delete_drink
 layout activity_history
 layout activity_login
 layout activity_main
