@@ -20,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText mUsername;
     private EditText mPassword;
     private Button mButton;
+    private Button signUp;
     private User myUser;
     private ChillJavaDAO mChillJavaDAO;
     private String un;
@@ -38,6 +39,7 @@ public class LoginActivity extends AppCompatActivity {
         mUsername = findViewById(R.id.username);
         mPassword = findViewById(R.id.password);
         mButton = findViewById(R.id.loginbtn);
+        signUp = findViewById(R.id.signinbtn);
         //storing values from display in strings
 
         mButton.setOnClickListener(new View.OnClickListener() {
@@ -53,12 +55,19 @@ public class LoginActivity extends AppCompatActivity {
                     SharedPreferences.Editor editor = preferences.edit();
                     editor.putInt(USER_ID_KEY, myUser.getUserId());
                     editor.apply();
-                    Toast.makeText(LoginActivity.this, "Welcome!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     intent.putExtra("user_id", myUser.getUserId());
                     startActivity(intent);
                     finish();
                 }
+            }
+        });
+
+        signUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, SigninActivity.class);
+                startActivity(intent);
             }
         });
     }
