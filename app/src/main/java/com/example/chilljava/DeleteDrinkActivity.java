@@ -15,6 +15,9 @@ import com.example.chilljava.db.ChillJavaDB;
 import com.example.chilljava.db.Menu;
 import com.google.android.material.snackbar.Snackbar;
 
+/**
+ * This activity is used for editing the price of the drink - part of CRUD and the last activity that I implement
+ */
 public class DeleteDrinkActivity extends AppCompatActivity {
     private EditText drinkName;
     private Button delete;
@@ -48,6 +51,9 @@ public class DeleteDrinkActivity extends AppCompatActivity {
         });
 
     }
+
+
+
 
     /**This was given to me by chatgpt because I could not implement deleting to work while the
      * queries were running on the main thread. Worked with adding though!

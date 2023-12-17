@@ -38,8 +38,16 @@ public class MenuActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_menu);
         homeButton = findViewById(R.id.homebutton);
         cartButton = findViewById(R.id.cartbutton);
+        List<Menu> cartselectedItems = (List<Menu>) getIntent().getSerializableExtra("CartSelectedItems");
         Intent intent = getIntent();
         muserId = intent.getIntExtra("userId", -1);
+        wireUpDB();
+        if(cartselectedItems == null){
+            selectedItems = new ArrayList<>();
+        }else{
+            selectedItems = cartselectedItems;
+        }
+
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,23 +64,11 @@ public class MenuActivity extends AppCompatActivity  {
                 startActivity(intent);
             }
         });
-        baseItems();
+//        baseItems();
         showItems();
         Toast.makeText(this, String.valueOf(muserId), Toast.LENGTH_SHORT).show();
     }
-    private void baseItems(){
-        wireUpDB();
-        if(mChillJavaDAO.getAllItems().size() == 0) {
-            Menu newItem = new Menu("Dark Roast", 0, true, 1.50);
-            Menu newItem1 = new Menu("Medium Roast", 0, true, 1.50);
-            Menu newItem2 = new Menu("Latte", 2, true, 1.50);
-            Menu newItem3 = new Menu("Cappuccino", 2, true, 1.50);
-            mChillJavaDAO.insert(
-                    newItem, newItem1, newItem2, newItem3
-            );
-        }
 
-    }
     private void showItems(){
         allItems = mChillJavaDAO.getAllItems();
 
@@ -92,7 +88,7 @@ public class MenuActivity extends AppCompatActivity  {
             coffeeImage.setLayoutParams(new LinearLayout.LayoutParams(480, 480));
 
             TextView textView = new TextView(this);
-            textView.setText(allItems.get(i).getItemName());
+            textView.setText(allItems.get(i).getItemName()+" $"+String.format("%.2f", allItems.get(i).getPrice()));
             textView.setTextColor(getColor(R.color.milk));
             textView.setTextSize(30);
             textView.setGravity(Gravity.CENTER);
@@ -128,8 +124,6 @@ public class MenuActivity extends AppCompatActivity  {
             }else{
                 textView2.setText("This drink cannot be iced");
             }
-
-
             // Add coffeeImage and textView to a new inner LinearLayout
             LinearLayout itemLayout = new LinearLayout(this);
             itemLayout.setOrientation(LinearLayout.VERTICAL);

@@ -19,9 +19,14 @@ import com.example.chilljava.db.Menu;
 import com.example.chilljava.db.Orders;
 import com.example.chilljava.db.User;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class handles the way user sees the cart as well as the functionality of checking out the items and parsing
+ * them into Orders table.
+ */
 public class CartActivity extends AppCompatActivity {
     private Button homeBtn;
     private Button menuBtn;
@@ -37,19 +42,12 @@ public class CartActivity extends AppCompatActivity {
         selectedItems = (List<Menu>) getIntent().getSerializableExtra("SelectedItems");
         Intent intent = getIntent();
         userId = intent.getIntExtra("userId", -1);
-//        Toast.makeText(this, String.valueOf(userId), Toast.LENGTH_SHORT).show();
         wireUpDB();
-        homeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        homeBtn.setOnClickListener(view-> {
                 intentFactory(MainActivity.class);
-            }
         });
-        menuBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        menuBtn.setOnClickListener(view->{
                 intentFactory(MenuActivity.class);
-            }
         });
         if (selectedItems != null && !selectedItems.isEmpty()) {
             showSelected(selectedItems);
@@ -66,6 +64,10 @@ public class CartActivity extends AppCompatActivity {
         for (int i = 0; i < selectedItems.size(); i++) {
             String imageRsc = selectedItems.get(i).getItemName().replace(" ", "_").toLowerCase();
             int resourceId = getResources().getIdentifier(imageRsc, "drawable", getPackageName());
+            if(resourceId<=0){
+                imageRsc = "espresso";
+                resourceId = getResources().getIdentifier(imageRsc, "drawable", getPackageName());
+            }
             ImageView coffeeImage = new ImageView(this);
             coffeeImage.setImageResource(resourceId);
             coffeeImage.setLayoutParams(new LinearLayout.LayoutParams(480, 480));
@@ -97,10 +99,8 @@ public class CartActivity extends AppCompatActivity {
         priceView.setTextColor(getColor(R.color.milk));
         mainLayout.addView(priceView);
         checkout(userId, total, mainLayout);
-
     }
     private void checkout(int userId, double ttl, LinearLayout mainLayout){
-//        LinearLayout mainLayout = findViewById(R.id.myLayoutOuter);
         Button button = new Button(this);
         button.setText("Checkout for $"+ String.format("%.2f", ttl));
         button.setTextSize(34);
@@ -111,9 +111,13 @@ public class CartActivity extends AppCompatActivity {
             public void onClick(View view) {
                 for(int i =0; i<selectedItems.size(); i++){
                      items.append(selectedItems.get(i).getItemId());
-                     Orders order = new Orders(userId, items.toString());
-                     mChillJavaDAO.insert(order);
                 }
+                Orders order = new Orders(userId, items.toString());
+                mChillJavaDAO.insert(order);
+                User user = mChillJavaDAO.getUserById(userId);
+                int newStars = user.getStars()+(int) Math.ceil(ttl);
+                user.setStars(newStars);
+                mChillJavaDAO.update(user);
                 mainLayout.removeAllViews();
             }
         });
@@ -121,6 +125,7 @@ public class CartActivity extends AppCompatActivity {
     }
     private void intentFactory(Class destination){
         Intent intent = new Intent(CartActivity.this, destination);
+        intent.putExtra("CartSelectedItems", (Serializable) selectedItems);
         intent.putExtra("userId", userId);
         startActivity(intent);
         finish();

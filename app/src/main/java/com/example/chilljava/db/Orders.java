@@ -5,14 +5,10 @@ import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = ChillJavaDB.ORDERS_TABLE,
-        foreignKeys = {@ForeignKey(entity = User.class,
-                parentColumns = "mUserId",
-                childColumns = "customerId")})
+@Entity(tableName = ChillJavaDB.ORDERS_TABLE)
 public class Orders {
     @PrimaryKey(autoGenerate = true)
     private int orderId;
-    @ColumnInfo(index = true)
     private int customerId;
     private String itemIds;
 

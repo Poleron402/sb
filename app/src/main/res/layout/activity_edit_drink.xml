@@ -34,7 +34,7 @@
         tools:layout_editor_absoluteX="30dp" />
 
     <Button
-        android:id="@+id/addDrink"
+        android:id="@+id/editDrink"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Edit price🖋️"

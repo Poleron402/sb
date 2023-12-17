@@ -10,7 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bcf30d5-61e6-401f-a349-c2586940c81c" name="Changes" comment="Somewhat nearing a good functionality lol">
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/chilljava/CartActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/chilljava/CartActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/chilljava/DeleteDrinkActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/chilljava/DeleteDrinkActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/chilljava/EditDrinkActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/chilljava/EditDrinkActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/chilljava/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/chilljava/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/chilljava/MenuActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/chilljava/MenuActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/chilljava/db/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/chilljava/db/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_drink.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_drink.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="messing" />
+        <entry key="$PROJECT_DIR$" value="history" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,18 +57,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "PROJECT_TRUSTED_KEY": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/Users/polinaperon/Desktop/ChillJava",
-    "memory.settings.postsync.last.time.stamp": "1702620801861",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;PROJECT_TRUSTED_KEY&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/polinaperon/Desktop/ChillJava&quot;,
+    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1702711891009&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="android.template.268956343">
       <recent name="com.example.chilljava" />
