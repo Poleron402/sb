@@ -9,7 +9,7 @@ Initial app flow
 <br>
 <img width="805" alt="Screenshot 2023-12-05 at 7 00 56 PM" src="https://github.com/Poleron402/sb/assets/89750832/0ce18b99-9093-4c9a-86d2-6328aaccffd5">
 
-<br>
+
 ** Note: theBucks was changed to Chill Java. Might be changed later too.
 ## User Capabilities (best case scenario)
 * Signing up and Loging in
